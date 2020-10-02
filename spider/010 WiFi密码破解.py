@@ -1,7 +1,9 @@
+#要想将这些结果全部试完得9.6年
 import pywifi
 from pywifi import const  # 判断是否连接WIFI
 import time
 from tqdm import tqdm
+import threading
 
 
 # 测试连接
@@ -21,7 +23,7 @@ def WifiConnect(password):
         # 创建WiFi连接文件
         profile = pywifi.Profile()
         # 要连接的WiFi的名称
-        profile.ssid = 'Network_lab'
+        profile.ssid = 'YQH'
         # 调用密码
         profile.key = password
         # wifi加密算法
